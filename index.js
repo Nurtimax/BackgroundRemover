@@ -34,7 +34,7 @@ const processImage = async filePath => {
       {
          headers: {
             "Content-Type": "multipart/form-data",
-            "X-Api-Key": "yKeea2r9m8VxHP4VDzB4no2d"
+            "X-Api-Key": process.env.YOUR_API_KEY || ""
          },
          responseType: "arraybuffer"
       }
